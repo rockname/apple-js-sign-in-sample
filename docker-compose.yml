@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: web
+    container_name: web
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
